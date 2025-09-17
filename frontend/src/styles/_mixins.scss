@@ -1,0 +1,16 @@
+@use "variables" as *;
+
+/* Container centralizado, com gutter lateral */
+@mixin container {
+  width: min(1100px, 100% - 2rem);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* Media query helper: @include respond(md) { ... } */
+@mixin respond($bp) {
+  @if $bp == sm { @media (max-width: #{$bp-sm}) { @content; } }
+  @else if $bp == md { @media (max-width: #{$bp-md}) { @content; } }
+  @else if $bp == lg { @media (max-width: #{$bp-lg}) { @content; } }
+  @else if $bp == xl { @media (max-width: #{$bp-xl}) { @content; } }
+}

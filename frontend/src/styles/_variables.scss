@@ -1,0 +1,32 @@
+/* === Color tokens === */
+$white: #ffffff;
+
+$gray-50:  #f9fafb;
+$gray-100: #f3f4f6;
+$gray-200: #e5e7eb;
+$gray-700: #374151;
+$gray-900: #111827;
+
+$purple-600: #4f46e5;
+
+/* === Spacing === */
+$sp-1: .25rem;
+$sp-2: .5rem;
+$sp-3: .75rem;
+$sp-4: 1rem;
+$sp-6: 1.5rem;
+
+/* === Radius === */
+$radius-sm: .25rem;
+$radius-md: .5rem;
+$radius-lg: .75rem;
+
+/* === Typography (opcional) === */
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+/* === Breakpoints === */
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;

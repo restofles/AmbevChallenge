@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|d:\\usuario\\desktop\\projetoambevchallenge\\backend\\ambevchallenge.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|solutionrelative:ambevchallenge.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|d:\\usuario\\desktop\\projetoambevchallenge\\backend\\ambevchallenge.api\\mappers\\employeemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|solutionrelative:ambevchallenge.api\\mappers\\employeemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|d:\\usuario\\desktop\\projetoambevchallenge\\backend\\ambevchallenge.api\\dtos\\employeedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|solutionrelative:ambevchallenge.api\\dtos\\employeedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|d:\\usuario\\desktop\\projetoambevchallenge\\backend\\ambevchallenge.api\\endpoints\\employeeendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|solutionrelative:ambevchallenge.api\\endpoints\\employeeendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|d:\\usuario\\desktop\\projetoambevchallenge\\backend\\ambevchallenge.api\\security\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|solutionrelative:ambevchallenge.api\\security\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|d:\\usuario\\desktop\\projetoambevchallenge\\backend\\ambevchallenge.api\\endpoints\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|solutionrelative:ambevchallenge.api\\endpoints\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|d:\\usuario\\desktop\\projetoambevchallenge\\backend\\ambevchallenge.api\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|solutionrelative:ambevchallenge.api\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|d:\\usuario\\desktop\\projetoambevchallenge\\backend\\ambevchallenge.api\\migrations\\20250915215848_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|solutionrelative:ambevchallenge.api\\migrations\\20250915215848_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|d:\\usuario\\desktop\\projetoambevchallenge\\backend\\ambevchallenge.api\\security\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFDA5F3-AC07-4230-9E61-5DAFEDCEAB62}|AmbevChallenge.Api\\AmbevChallenge.Api.csproj|solutionrelative:ambevchallenge.api\\security\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeEndpoints.cs",
+              "DocumentMoniker": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\EndPoints\\EmployeeEndpoints.cs",
+              "RelativeDocumentMoniker": "AmbevChallenge.Api\\EndPoints\\EmployeeEndpoints.cs",
+              "ToolTip": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\EndPoints\\EmployeeEndpoints.cs",
+              "RelativeToolTip": "AmbevChallenge.Api\\EndPoints\\EmployeeEndpoints.cs",
+              "ViewState": "AgIAANsAAAAAAAAAAAAAwOcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T03:49:08.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20250915215848_InitialCreate.cs",
+              "DocumentMoniker": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\Migrations\\20250915215848_InitialCreate.cs",
+              "RelativeDocumentMoniker": "AmbevChallenge.Api\\Migrations\\20250915215848_InitialCreate.cs",
+              "ToolTip": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\Migrations\\20250915215848_InitialCreate.cs",
+              "RelativeToolTip": "AmbevChallenge.Api\\Migrations\\20250915215848_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T05:24:29.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeMapper.cs",
+              "DocumentMoniker": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\Mappers\\EmployeeMapper.cs",
+              "RelativeDocumentMoniker": "AmbevChallenge.Api\\Mappers\\EmployeeMapper.cs",
+              "ToolTip": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\Mappers\\EmployeeMapper.cs*",
+              "RelativeToolTip": "AmbevChallenge.Api\\Mappers\\EmployeeMapper.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvwgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T03:48:30.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeDtos.cs",
+              "DocumentMoniker": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\Dtos\\EmployeeDtos.cs",
+              "RelativeDocumentMoniker": "AmbevChallenge.Api\\Dtos\\EmployeeDtos.cs",
+              "ToolTip": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\Dtos\\EmployeeDtos.cs",
+              "RelativeToolTip": "AmbevChallenge.Api\\Dtos\\EmployeeDtos.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwBAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T03:47:08.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JwtTokenService.cs",
+              "DocumentMoniker": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\Security\\JwtTokenService.cs",
+              "RelativeDocumentMoniker": "AmbevChallenge.Api\\Security\\JwtTokenService.cs",
+              "ToolTip": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\Security\\JwtTokenService.cs",
+              "RelativeToolTip": "AmbevChallenge.Api\\Security\\JwtTokenService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T22:43:42.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\Program.cs",
+              "RelativeDocumentMoniker": "AmbevChallenge.Api\\Program.cs",
+              "ToolTip": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\Program.cs",
+              "RelativeToolTip": "AmbevChallenge.Api\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T05:48:44.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthEndpoints.cs",
+              "DocumentMoniker": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\EndPoints\\AuthEndpoints.cs",
+              "RelativeDocumentMoniker": "AmbevChallenge.Api\\EndPoints\\AuthEndpoints.cs",
+              "ToolTip": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\EndPoints\\AuthEndpoints.cs",
+              "RelativeToolTip": "AmbevChallenge.Api\\EndPoints\\AuthEndpoints.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAUwCMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T17:28:06.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "AmbevChallenge.Api\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "AmbevChallenge.Api\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAEoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T05:24:47.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\Security\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "AmbevChallenge.Api\\Security\\PasswordHasher.cs",
+              "ToolTip": "D:\\USUARIO\\Desktop\\ProjetoAmbevChallenge\\backend\\AmbevChallenge.Api\\Security\\PasswordHasher.cs",
+              "RelativeToolTip": "AmbevChallenge.Api\\Security\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T22:42:54.926Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

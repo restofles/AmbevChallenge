@@ -1,0 +1,155 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "sass:color";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* === Base === */
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $gray-900;
+  background: #fafafa;
+  margin: 0;
+}
+
+.container {
+  @include container;
+}
+@include respond(md) {
+  .container {
+    padding: 0 $sp-3;
+  }
+}
+
+/* === Typography === */
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: $gray-900;
+}
+h1 { font-size: 1.75rem; margin-bottom: $sp-3; }
+h2 { font-size: 1.375rem; margin-bottom: $sp-2; }
+
+/* === Inputs === */
+.input {
+  display: block;
+  width: 100%;
+  padding: .65rem .75rem;
+  border: 1px solid $gray-200;
+  border-radius: $radius-md;
+  background: #f9f9ff;
+  font-size: 1rem;
+  &:focus {
+    border-color: $purple-600;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, .2);
+  }
+  &::placeholder {
+    color: $gray-700;
+    opacity: .6;
+  }
+  min-height: 42px;
+}
+
+/* === Buttons === */
+.btn, .btn--outline {
+  display: inline-block;
+  padding: .55rem 1.25rem;
+  border-radius: $radius-md;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: background .2s ease;
+  min-height: 40px;
+  width: auto; 
+}
+
+/* Botão sólido */
+.btn {
+  background: $purple-600;
+  color: $white;
+  border: none;
+  &:hover {
+   background: color.scale($purple-600, $lightness: -14%);
+  }
+}
+
+/* Botão outline */
+.btn--outline {
+  background: transparent;
+  color: $purple-600;
+  border: 1px solid $purple-600;
+  &:hover {
+    background: rgba(79,70,229,.05);
+  }
+}
+
+form .btn, 
+form .btn--outline {
+  width: 100%;
+}
+
+.table .btn,
+.table .btn--outline {
+  padding: .35rem .75rem;
+  font-size: .85rem;
+  min-height: auto;
+  width: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+.table th,
+.table td {
+  padding: .5rem .75rem;
+  border-bottom: 1px solid $gray-200;
+  text-align: left;
+}
+.table th {
+  background: $gray-50;
+  font-weight: 600;
+}
+.table td {
+  word-break: break-word;
+}
+
+@include respond(md) {
+  .table thead { display: none; }
+  .table tbody tr {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: $sp-3;
+    border: 1px solid $gray-200;
+    border-radius: $radius-md;
+    margin-bottom: $sp-3;
+  }
+  .table tbody td {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: $sp-2;
+    border: 0;
+    padding: $sp-1 0;
+  }
+  .table tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: $gray-700;
+  }
+  .table tbody td:last-child { justify-self: end; }
+}
+
+/* === Form grids === */
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+}
+@media (max-width: 768px) {
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
