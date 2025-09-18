@@ -3,33 +3,6 @@
 This project contains a **.NET 8 backend**, a **Next.js frontend**, and a **SQL Server 2022 database running in Docker**.  
 The stack is designed to run locally with minimal setup.
 
----
-
-## 🚀 Quick Start – Run the project in 30 seconds
-
-1. Start SQL Server in Docker:
-   ```bash
-   docker compose up -d
-   ```
-
-2. Run the backend API:
-   ```bash
-   cd backend
-   dotnet run
-   ```
-
-3. Run the frontend app:
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
-
-- **Frontend:** http://localhost:3000  
-- **Backend API:** http://localhost:5000  
-- **Database (SQL Server):** localhost,1433  
-
----
 
 ## 📦 Prerequisites
 
@@ -104,7 +77,7 @@ docker exec -it ambev-sql /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Str0
 The API will be available at `http://localhost:5000` (or the port defined in `launchSettings.json
 
 Password for any users of the system:
-P@ssw0rd!
+<strong>P@ssw0rd!</strong>
 
 ---
 
@@ -175,4 +148,5 @@ AmbevChallengeProject/
 
 - Never commit real passwords to the repository.  
 - For production, always use environment variables (`.env`) instead of hardcoding secrets in `docker-compose.yml`.
+
 
