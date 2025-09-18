@@ -1,5 +1,31 @@
 # Ambev Challenge Project
 
+
+📜 <strong>Letter to My Future Bosses</strong>
+
+Dear Future Bosses,
+
+If you are reading this, congratulations - you’ve just unlocked a hidden level of the hiring process: my README file.
+This is not just code. This is a declaration of intent.
+
+I promise to break fewer things in production than I break in my kitchen (and that’s saying a lot).
+
+I strongly believe in clean code… except when deadlines look like fast food drive-thrus.
+
+My English may not always be perfect, but the results show up clearly on the burndown chart. 📉
+
+Deadlines may run fast, but I run faster (with a little help from caffeine and Git stash).
+
+And yes, after delivering on time, I’ll always be ready for a happy hour — especially if there’s Ambev beer. 🍺
+
+So here’s the deal: if you like engineers who write code that runs, containers that don’t explode, and jokes that sometimes land…
+then maybe, just maybe, we’ll be a perfect match.
+
+Sincerely,
+The candidate who already dockerized your future happiness.
+
+Now, seriously — how to run this project:
+
 This project contains a **.NET 8 backend**, a **Next.js frontend**, and a **SQL Server 2022 database running in Docker**.  
 The stack is designed to run locally with minimal setup.
 
