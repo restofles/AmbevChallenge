@@ -115,6 +115,8 @@ export default function EmployeeForm({ initialData, editMode = false }: Props) {
   const [managersLoading, setManagersLoading] = useState<boolean>(false);
 
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false); // <— NEW: state to toggle visibility
+
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [loadedOnce, setLoadedOnce] = useState<boolean>(Boolean(initialData && editMode));
@@ -227,11 +229,9 @@ export default function EmployeeForm({ initialData, editMode = false }: Props) {
     const dob = new Date(Date.UTC(y, m - 1, d));
     const today = new Date();
     const age =
-      today.getUTCFullYear() -
-      dob.getUTCFullYear() -
+      today.getUTCFullYear() - dob.getUTCFullYear() -
       (today.getUTCMonth() < dob.getUTCMonth() ||
-      (today.getUTCMonth() === dob.getUTCMonth() &&
-        today.getUTCDate() < dob.getUTCDate())
+        (today.getUTCMonth() === dob.getUTCMonth() && today.getUTCDate() < dob.getUTCDate())
         ? 1
         : 0);
     return age < 18;
@@ -274,9 +274,9 @@ export default function EmployeeForm({ initialData, editMode = false }: Props) {
         const myRole = getRole();
         setError(
           "You don’t have permission to save this change. " +
-          "You can’t create or edit a user with a higher role than yours" +
-          (myRole ? ` (your role: ${String(myRole)})` : "") +
-          "."
+            "You can’t create or edit a user with a higher role than yours" +
+            (myRole ? ` (your role: ${String(myRole)})` : "") +
+            "."
         );
       } else {
         setError(apiErrorMessage(err));
@@ -369,9 +369,36 @@ export default function EmployeeForm({ initialData, editMode = false }: Props) {
       </div>
 
       {!editMode && (
-        <div>
+        <div style={{ position: "relative" }}>
           <label>Password *</label>
-          <input className="input" type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <input
+            className="input"
+            type={showPassword ? "text" : "password"}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+            style={{ paddingRight: "2.5rem" }}
+          />
+          <button
+            type="button"
+            aria-label={showPassword ? "Hide password" : "Show password"}
+            aria-pressed={showPassword}
+            onClick={() => setShowPassword((v) => !v)}
+            style={{
+              position: "absolute",
+              right: "0.5rem",
+              top: "3.4rem",
+              transform: "translateY(-50%)",
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+              fontSize: "2.5rem",
+              lineHeight: 1
+            }}
+            title={showPassword ? "Hide password" : "Show password"}
+          >
+            {showPassword ? "🙈" : "👁"}
+          </button>
         </div>
       )}
 
