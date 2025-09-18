@@ -24,7 +24,6 @@ function candidateBases(): string[] {
       bases.add(envBase.replace(/^https:\/\//, "http://"));
     }
   }
-  bases.add("http://localhost:44313");
   return Array.from(bases);
 }
 

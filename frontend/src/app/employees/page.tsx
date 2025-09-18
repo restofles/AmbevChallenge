@@ -12,7 +12,7 @@ async function loadInitial(q?: string): Promise<Employee[] | null> {
   const token = cookieStore.get("token")?.value;
   if (!token) return null;
 
-  const base = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:44313";
+  const base = process.env.NEXT_PUBLIC_API_URL;
   const url = new URL("/employees", base);
   if (q && q.trim()) url.searchParams.set("q", q.trim());
 
