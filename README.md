@@ -101,7 +101,10 @@ docker exec -it ambev-sql /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Str0
    dotnet run
    ```
 
-The API will be available at `http://localhost:5000` (or the port defined in `launchSettings.json`).
+The API will be available at `http://localhost:5000` (or the port defined in `launchSettings.json
+
+Password for any users of the system:
+P@ssw0rd!
 
 ---
 
@@ -172,3 +175,4 @@ AmbevChallengeProject/
 
 - Never commit real passwords to the repository.  
 - For production, always use environment variables (`.env`) instead of hardcoding secrets in `docker-compose.yml`.
+
