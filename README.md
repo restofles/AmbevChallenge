@@ -1,36 +1,174 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ambev Challenge Project
 
-## Getting Started
+This project contains a **.NET 8 backend**, a **Next.js frontend**, and a **SQL Server 2022 database running in Docker**.  
+The stack is designed to run locally with minimal setup.
 
-First, run the development server:
+---
+
+## 🚀 Quick Start – Run the project in 30 seconds
+
+1. Start SQL Server in Docker:
+   ```bash
+   docker compose up -d
+   ```
+
+2. Run the backend API:
+   ```bash
+   cd backend
+   dotnet run
+   ```
+
+3. Run the frontend app:
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
+
+- **Frontend:** http://localhost:3000  
+- **Backend API:** http://localhost:5000  
+- **Database (SQL Server):** localhost,1433  
+
+---
+
+## 📦 Prerequisites
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) (WSL2 on Windows recommended)  
+- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download)  
+- [Node.js 20+](https://nodejs.org/en/) (to run the frontend locally)  
+
+---
+
+## ▶️ Starting the Database with Docker
+
+From the project root, run:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+docker compose up -d
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Create a container named `ambev-sql` using `mcr.microsoft.com/mssql/server:2022-latest`
+- Expose port `1433` on your host
+- Persist data into `./infra/database/data`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Check if it is running:
 
-## Learn More
+```bash
+docker ps
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔑 SQL Server Access
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Host:** `localhost,1433`  
+- **User:** `sa`  
+- **Password:** `Str0ng!Passw0rd` (defined in `docker-compose.yml`)  
+- **Database:** create it as needed (e.g., `AmbevDb`)  
 
-## Deploy on Vercel
+You can connect using **Azure Data Studio**, **SQL Server Management Studio (SSMS)**, or from inside the container:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+docker exec -it ambev-sql /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Str0ng!Passw0rd
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🛠️ Running the Backend
+
+1. Go to the backend folder:
+   ```bash
+   cd backend
+   ```
+
+2. Update the connection string in `appsettings.Development.json` (or via environment variables):
+
+   ```json
+   "ConnectionStrings": {
+     "Default": "Server=localhost,1433;Database=AmbevDb;User Id=sa;Password=Str0ng!Passw0rd;TrustServerCertificate=True;"
+   }
+   ```
+
+3. Apply migrations (if available):
+   ```bash
+   dotnet ef database update
+   ```
+
+4. Run the API:
+   ```bash
+   dotnet run
+   ```
+
+The API will be available at `http://localhost:5000` (or the port defined in `launchSettings.json`).
+
+---
+
+## ⚛️ Running the Frontend
+
+1. Go to the frontend folder:
+   ```bash
+   cd frontend
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Set the `NEXT_PUBLIC_API_URL` environment variable to point to your API (e.g., `http://localhost:5000`).
+
+4. Start the frontend:
+   ```bash
+   npm run dev
+   ```
+
+The app will be available at `http://localhost:3000`.
+
+---
+
+## 🐳 Resetting the Database
+
+To remove all data and recreate the container:
+
+```bash
+docker compose down -v
+docker compose up -d
+```
+
+---
+
+## 📚 Project Structure
+
+```
+AmbevChallengeProject/
+├─ backend/     # .NET 8 API
+├─ frontend/    # Next.js app
+├─ infra/       # Infrastructure files (e.g., database volume)
+├─ docs/        # Documentation
+├─ scripts/     # Helper scripts
+├─ docker-compose.yml
+└─ README.md
+```
+
+---
+
+## 🚀 Useful Commands
+
+- **View SQL Server logs:**
+  ```bash
+  docker compose logs -f sqlserver
+  ```
+
+- **Access the container shell:**
+  ```bash
+  docker exec -it ambev-sql bash
+  ```
+
+---
+
+## 📝 Notes
+
+- Never commit real passwords to the repository.  
+- For production, always use environment variables (`.env`) instead of hardcoding secrets in `docker-compose.yml`.
